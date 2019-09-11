@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<link rel="stulesheet" href="common.css">
+<style>
+    table{display: table;} /*css의속성 preperty*/
+    th,td{display: table-cell;}
+    .contents{clear: both;width: 100%;}
+    .vs{width: 100%;}
+    .vs .pic{display: block;width: 100%;}
+    .page{clear: both;width: 100vh;min-height:100vh; }
+        
+    
+    
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--       헤더 시작-->
+        <header class="hd">
+            <a href="" class="logo"><img src="https://loremflickr.com/120/50" alt="로고"></a>
+            <nav id="tnb">
+                <ul class="menu">
+                    <li><a href="first.html">처음</a></li>
+                    <li><a href="second.html">두 번째</a></li>
+                    <li><a href="mail.html">Contectus</a></li>
+                </ul>
+            </nav>
+
+            <nav id="gnb">
+                <ul class="menu">
+                    <li><a href="">사이트소개</a></li>
+                    <li><a href="">주요정보</a></li>
+                    <li><a href="">서비스</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">사진들</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--        헤더 끝-->
+        <!--        메인 시작-->
+        <main class="contents">
+            <figure class="vs">
+                <img src="https://placehold.it/1200x400/333" alt="배너" class="pic">
+            </figure>
+            <div class="page" id="page1">
+                <h2 class="page_tit">포토갤러리</h2>
+                <ul class="lst">
+                    <li class="item1">
+                        <a href="">
+                            <img src="https://placehold.it/330x280" alt="목록1" class="thumb">
+                            <h3 class="lst_tit">목록제목1</h3>
+                            <p class="lst_com">목록내용1</p>
+                        </a>
+                    </li>
+                    <li class="item2">
+                        <a href="">
+                            <img src="https://placehold.it/330x280" alt="목록2" class="thumb">
+                            <h3 class="lst_tit">목록제목2</h3>
+                            <p class="lst_com">목록내용2</p>
+                        </a>
+                    </li>
+                    <li class="item3">
+                        <a href="">
+                            <img src="https://placehold.it/330x280" alt="목록3" class="thumb">
+                            <h3 class="lst_tit">목록제목3</h3>
+                            <p class="lst_com">목록내용3</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page" id="page2">
+                <h2 class="page_tit">공지사항</h2>
+                <table id="notice">
+                    <thead>
+                        <tr>
+                            <th class="n_num">번호</th>
+                            <th class="n_tit">제목</th>
+                            <th class="n_date">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="n_num">5</td>
+                            <td class="n_tit">
+                                <a href="">공지사항 제목 클릭시 이동5</a>
+                            </td>
+                            <td class="n_date">2019-09-10</td>
+                        </tr>
+                        <tr>
+                            <td class="n_num">4</td>
+                            <td class="n_tit">
+                                <a href="">공지사항 제목 클릭시 이동4</a>
+                            </td>
+                            <td class="n_date">2019-09-09</td>
+                        </tr>
+                        <tr>
+                            <td class="n_num">3</td>
+                            <td class="n_tit">
+                                <a href="">공지사항 제목 클릭시 이동3</a>
+                            </td>
+                            <td class="n_date">2019-09-08</td>
+                        </tr>
+                        <tr>
+                            <td class="n_num">2</td>
+                            <td class="n_tit">
+                                <a href="">공지사항 제목 클릭시 이동2</a>
+                            </td>
+                            <td class="n_date">2019-09-07</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page" id="page3">
+                <h2 class="page_tit">사이트 맵</h2>
+                <div class="sitemap">
+                    <ul class="site">
+                        <li class="cate">
+                            <dl>
+                                <dt>사이트소개</dt>            
+                                <dd><a href="">회사연혁</a></dd>
+                                <dd><a href="">경영인사</a></dd>
+                                <dd><a href=""></a>인사말</dd>
+                                <dd><a href="">오시는길</a></dd>
+                            </dl>
+                        </li>
+                        <li class="cate">
+                            <dl>
+                                <dt>주요정보</dt>
+                                <dd><a href="">1</a></dd>
+                                <dd><a href="">2</a></dd>
+                                <dd><a href="">3</a></dd>
+                                <dd><a href="">4</a></dd>
+                            </dl>
+                        </li>
+                        <li class="cate">
+                            <dl>
+                                <dt>서비스</dt>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                            </dl>
+                        </li>
+                        <li class="cate">
+                            <dl>
+                                <dt>고객센터</dt>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                            </dl>
+                        </li>
+                        <li class="cate">
+                            <dl>
+                                <dt>사진들</dt>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                            </dl>
+                        </li>
+                        <li class="cate">
+                            <dl>
+                                <dt>기타</dt>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                                <dd><a href="">사이트링크</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!--        메인 끝-->
+        <!--       푸터 시작-->
+        <footer class="ft">
+            <p class="addr">대전시 서구 둔산동 1160 오라클빌딩 3F / 042-480-2811</p>
+            <p class="copyright">Copyright &copy; PARK CO, LTD. All rights reserved. @ 2019</p>
+        </footer>
+        <!--        푸터 끝-->
+    </div>
+</body>
+
+</html>
