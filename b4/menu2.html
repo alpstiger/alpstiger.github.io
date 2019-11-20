@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="common.css">
+    
+    <title>상품리스트</title>
+    <style>
+    *
+    body,html { margin: 0;padding: 0; }
+     .header{font-size: 0.8em;;background: black}
+    .menu_nav{float: right;font-size: 1.2em;font-style: bold;color: black;}
+    menu_nav a{font: white}
+    .menu_navtop{width:100%;height: 30px;background: black }
+    .logo_nav{position:relative;;width:1920px;height: 70px;background: black} 
+     
+        .bread {clear: both;left: 400px}
+        
+        
+    .hd { text-align:center; }  
+   
+    .hd_wrap  { width:420px; margin:0 auto; }   
+     
+        
+    .row { clear:both; }   
+    .row::after { content:""; display:table; clear:both; } 
+    .bread { padding-left:20%; }   
+    .col { float:left;} 
+    .col li a{font-size: 2em;font-weight: bold;color: black}
+        .col ll a:hover{text-decoration: none}
+       
+    .side { width:500px;float: lef;position: fixed;} 
+     
+    .con { width:1420px; float: right;border-left:5px solid #333    ; }   
+    .vs{width: 700px;height: 800px;}
+            #ed1{; background-color:  #eee;border-radius:10%; width:800px;height: 800px;}
+        
+    h2 {font-size: 30px; clear: both}
+    .p2 h2.ed15_h{font-size: 30px; clear: both}
+    p {font-size: 1.2em}
+        
+  .gnb { float:right; ; width:600px; height: auto; box-sizing: border-box;}
+.gnb li { float:left; width:140px; position:relative; line-height:32px; 
+    cursor:pointer; border-top:1px solid #333; border-right:1px solid #333; 
+    border-left:1px solid #333;bottom: 50px;
+    box-sizing:border-box; }
+.gnb li a { display:block; text-align:center; line-height:32px; color:white; 
+    background:black; font-size:18px; font-weight:bold; }    
+.sub {  position:absolute;margin-top: 30px; right: 1px; opacity:0; visibility:hidden; box-sizing:border-box; border-bottom:1px solid #33; transition: 0.6s;
+height:0; overflow:hidden; } 
+.gnb li a.dp1 { border-bottom:1px solid #333; line-height:31px; }   
+  
+.gnb li:hover .sub { opacity:1; visibility:visible; height:96px; } 
+.gnb li.item1 { border-left:1px solid #333; }    
+.gnb li.item1 .sub { border-left:1px solid #333; left:-1px; border-right:1px solid #333; box-sizing:border-box; }
+.gnb li.item1 .sub li { box-sizing:border-box; width: 140px; }    
+.gnb li .sub li { border-top:0px; }    
+.gnb li .sub a:hover { background:gold; color:#fff; } 
+    .top_back {;z-index: 2; width: 1920px;height: 50px;background-color: black}  
+        .vs>img:hover{;position: relative;opacity: 0.1 margin-top: 300px}  
+        p{font-size: 25px}   
+        
+        
+        
+        
+        
+    .ft { background:#333;margin-top: 8800px; text-align:center;height: 200px } 
+    
+        
+      
+
+    </style>
+</head>
+<body>
+    <div class="allwrap">
+      <header>
+   <div class="logo_nav">
+           <a href="index.html"><img src="image/top2.png" alt=""></a>
+    </div>
+       <hr style="color: gold">
+   <div class="top_back">
+      </div>       
+       
+      <nav class="gnb">
+            <ul class="menu">
+                <li class="item1">
+                    <a href="sale.html" class="dp1">특별할인</a>
+                   
+                </li>
+                <li class="item2">
+                    <a href="menu2.html" class="dp1">상품리스트</a>
+                    <ul class="sub">
+                        <li><a href="menu2.html">EDITION SERIES</a></li>
+                        <li><a href="menu2-2.html">PERFORMANCE</a></li>
+                        <li><a href="menu2-3.html">IN EARPHONE</a></li>
+                        <li><a href="menu2-4.html">SIGNATURE</a></li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <a href="menu3.html" class="dp1">특허기술</a>
+                
+                </li>
+                <li class="item4">
+                    <a href="menu4.html" class="dp1">테스트</a>
+
+                </li>
+            </ul>
+        </nav>
+        
+  
+    </header>
+    <main class="row">
+        <div class="bread">
+          
+            <p><a href="/index.html">HOME</a> &gt;<p><a href="/menu2.html">상품리스트</a>&gt;  <span>EDITION SERIES</span></p>
+        </div>
+        <aside class="col side">
+            <h2>상품리스트</h2>
+            <ul>
+                 <li><a href="menu2.html" style="text-decoration: underline">EDITION SERIES</a></li>
+                <li><a href="menu2-2.html" style="text-decoration: underline" >PERFORMANCE</a></li>
+                <li><a href="menu2-3.html" style="text-decoration: underline">IN EARPHONE</a></li>
+                <li><a href="menu2-4.html" style="text-decoration: underline">SIGNATURE</a></li>
+            </ul>
+        </aside>
+        <section class="col con">
+            <figure class="vs">
+                <img src="/image/menu2_image/Edition_top_logo.png" alt="배너">
+            <ul class="p2">
+                      <h2 class="ed1_h">Edition 15 Veritas</h2>
+                      <li id="ed1"><a href="menu2_1image.html"><img src="/image/menu2_image/ed1.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+    GTC 드라이버 기술Edition 15 Veritas는 완전히 새로운 드라이버 기술인 
+                GTC(Gold Titanium Compound Technology)를 사용합니다. 
+                금박 막과 티타늄 돔은 함께 최고의 사운드 성능을위한 
+                드라이버를 형성합니다. Edition 15 Veritas는 가정 거실, 
+                모바일 장치 또는 전문적인 환경에서 정교하고 좋아하는 음악을
+                즐기기 위해 전체 사운드 스펙트럼을 매우 상세하고 투명하게 
+                반영합니다. LEMO 커넥터와 4 와이어 케이블을 통해 Edition 15 
+                Veritas는 이미 대칭 작동을 위해 준비되었습니다         
+               
+            
+            </ul>
+            
+                 
+            <ul class="p2">
+                      <h2 class="ed1_h">Edition 15</h2>
+                      <li id="ed1"><a href="#"><img src="/image/menu2_image/ed2.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+    GTC 드라이버 기술Edition 15 Veritas는 완전히 새로운 드라이버 기술인 
+                GTC(Gold Titanium Compound Technology)를 사용합니다. 
+                금박 막과 티타늄 돔은 함께 최고의 사운드 성능을위한 
+                드라이버를 형성합니다. Edition 15 Veritas는 가정 거실, 
+                모바일 장치 또는 전문적인 환경에서 정교하고 좋아하는 음악을
+                즐기기 위해 전체 사운드 스펙트럼을 매우 상세하고 투명하게 
+                반영합니다. LEMO 커넥터와 4 와이어 케이블을 통해 Edition 15 
+                Veritas는 이미 대칭 작동을 위해 준비되었습니다         
+               
+            
+            </ul>
+            
+                 
+            <ul class="p2">
+                      <h2 class="ed1_h">Edition Eleven </h2>
+                      <li id="ed1"><a href="#"><img src="/image/menu2_image/ed3.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+   다이나믹 한 개방형 오버 이어 헤드폰 
+Edition 11은 개방형 디자인의 다이내믹 하이파이 헤드폰으로 포트폴리오를 강화합니다. 그것은 Starnberg 호수 근처의 좋은 흡연자 산에 우리 공장에서 정교한 수공예로 제조됩니다. 개방적이고 순환적인 디자인 덕분에 공간 스 태거 링이 탁월하고 바람이 잘 통하는 섬세한 사운드가 특징입니다. 따라서 클래식과 재즈에서 록과 팝에 이르기까지 모든 장르의 다양한 엔터테인먼트 소스와 음악을 즐기기에 완벽하게 적합합니다. 고귀한 제조소 걸작 판 11은 1,111 부로 엄격히 제한됩니다.   
+               
+            
+            </ul>
+       
+                
+            <ul class="p2">
+                      <h2 class="ed1_h">Edition 8 EX</h2>
+                      <li id="ed1"><a href="#"><img src="/image/menu2_image/ed4.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+   음향 적으로 독특한 사운드 경험
+ 강력한 사운드 선언을위한 남성적인 디자인의 Edition 8 EX.
+
+S-LOGICEX®가 장착 된 최초의 중형 헤드셋이기 때문에 최신 기술이 첨단 기술을 충족시킵니다. 이 원리를 통해 스피커의 자연스러운 음악 재생을 영감으로 받아 분산 센 서 배치를 통해 몇 센티미터로 구현했습니다. 오디오 애호가들은 재능있는베이스, 상쾌한 중음 및 벨벳 같은 높이로 마음이 원하는 모든 것을 찾을 수 있습니다. 원칙적으로이 다이내믹 한 폐쇄 형 헤드폰을 사용하면 디지털 사운드를 아날로그로 변환 할 수 있습니다.         
+               
+            
+            </ul>
+            
+            <ul class="p2">
+                      <h2 class="ed1_h">Edition 8 CLASSIC</h2>
+                      <li id="ed1"><a href="#"><img src="/image/menu2_image/ed5.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+   음향 적으로 독특한 사운드 경험
+ 강력한 사운드 선언을위한 남성적인 디자인의 Edition 8 CLASSIC.
+
+수제 고급형 헤드폰 : 에디션 8 클래식
+우아한 검정색과 은색 디자인을 갖춘 에디션 8 클래식은 눈길을 사로 잡습니다. 루테늄으로 코팅 된 이어 캡은 음악 여행에서 장수를 보장합니다. 세련된 외관을 위해 케이크 위에 장식하는 것은 브러시 처리 된 우아한 알루미늄 인레이입니다.
+깨끗한 사운드와 고 충실도의 하이 엔드 헤드폰은 오디오 애호가들의 마음을 더 빠르게 만들어줍니다. Edition 8 Classic에서는베이스가 매우 쉽게 강조되며 스테레오 효과가 정확하게 재현됩니다. S-Logic® Plus 기술은 공간 사운드를 포 그라운드로 배치합니다. 따라서 악기와 음색이 정확하게 배치되어 좋아하는 음악이 매우 정밀하게 해결됩니다.
+
+닫힌 헤드폰 Edition 8 Classic의 편안한 착용감은 귀 및 귀 쿠션에 최고 품질의 가죽을 사용하여 매우 쾌적합니다. 귀 쿠션 소프트 이어 쿠션은 외부 소음을 완벽하게 차단합니다. 몇 시간 동안 소리가 나지 않습니다.
+
+Edition 8 Classic에는 물론 MU 금속 차폐 기능이 장착되어 있습니다.이 등급의 헤드폰을 사용하면 ULE 표준에 따른 전자기 방사선 노출 감소를 놓치지 않아야합니다.        
+                </p>
+            </ul>
+                 
+            <ul class="p2">
+                      <h2 class="ed1_h">Edition M</h2>
+                      <li id="ed1"><a href="#"><img src="/image/menu2_image/ed6.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+   Edition M BLACK PEARL로 음악적으로 모바일하세요 – Ultrasone의 핸드 메이드 헤드폰
+여기서 손으로 고른 견고한 재료를 다시 찾을 수 있습니다 : 머리 모양에 맞는 귀여워 스프링 스틸 스트랩. 고광택 및 PVD 코팅 이어 캡은 탄력성과 독점 성을 동시에 보장합니다. 부드러운 가죽 이어 패드는 외부 소음을 차단하는 데 사용됩니다.
+
+기차, 비행기 또는 다른 여행에서 사운드 경험을 찾고 있다면이 온 이어 헤드폰이 완벽한 선택입니다. Edition M BLACK PEARL은 고해상도 플레이어, 노트북, 태블릿 및 스마트 폰과 결합하여 잠재력을 극대화합니다. 특허받은 S-Logic® Plus 기술을 통해 좋아하는 음악을 즐길 수 있습니다. 강력한 저음과 현재 중음이 여기에서 보장됩니다. 모바일 고급 헤드폰에는 저주파 자기 방사를 줄이기 위해 MU 금속 차폐가 있습니다.      
+                </p>
+            </ul>
+            
+            
+             <ul class="p2">
+                      <h2 class="ed1_h">Edition M plus</h2>
+                      <li id="ed1"><a href="#"><img src="/image/menu2_image/ed6.png" alt=""></a>
+                    </li>
+              
+            
+            <p class="ed15_p">
+ 수작업으로 제조 된 모바일 에디션 M PLUS
+기차 나 비행기로 여행 중에 음악적으로 다이빙하십시오. 부드러운 양모 귀 쿠션이있는 오버 이어 헤드폰은 외부 소음을 차단하고 정밀하게 제작 된 스프링 스틸 스트랩으로 모든 머리 모양에 맞습니다. 또한 귀마개에 반짝이는 루테늄-광학 PVD 코팅은 탄력성을 보장하며 시대를 초월한 디자인을 나타냅니다.
+
+고품질 고해상도 플레이어 및 기타 모바일 장치는 Edition M PLUS와 균형 잡힌 상호 작용을 찾을 수 있습니다. 40mm 티타늄 코팅 트랜스 듀서는 선명한 사운드와 상당한 범위의 사운드를 보장합니다. 공간 사운드 재생은 특허받은 S-Logic® Plus 기술로 제공됩니다. 또한 ULE (초저 기술)는 전자기 방사선의 감소를 보장합니다.   
+                </p>
+            </ul>
+            
+           </figure> 
+       
+        </section>
+    </main>
+  <footer class="ft">
+     <h1>문의전화|서울지점:02-777-7777|대전지점:042-777-7777 |이메일문의:ultrasone@gmail.com  <a href="https://www.facebook.com/ULTRASONE/"><img src="./image/facebook_link.png" alt="" ></a></h1>
+    
+     <hr>
+
+<h2>      
+Copyright(C)Contents and compilations published on these websites by the providers are subject to German copyright laws.</h2>
+      
+      
+  </footer>
+
+    </div>
+</body>
+</html>

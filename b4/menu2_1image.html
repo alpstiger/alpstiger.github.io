@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="common.css">
+    <title>15 veri</title>
+    <style>
+        .wrap{width: 1920px;height: 2400px}
+        .figure img {;width: 1920px; height: 600px;}
+    
+        *{margin: 0;padding: 0}
+                 .gnb { float:right; ; width:600px; height: auto; box-sizing: border-box;}
+.gnb li { float:left; width:140px; position:relative; line-height:32px; 
+    cursor:pointer; border-top:1px solid #333; border-right:1px solid #333; 
+    border-left:1px solid #333;bottom: 50px;
+    box-sizing:border-box; }
+.gnb li a { display:block; text-align:center; line-height:32px; color:white; 
+    background:black; font-size:18px; font-weight:bold; }    
+.sub {  position:absolute; top:80px;right: 1px; z-index:100; opacity:0; visibility:hidden; box-sizing:border-box; border-bottom:1px solid #333; transition: 0.6s;
+    height:0;}
+.gnb li a.dp1 { border-bottom:1px solid #333; line-height:31px; }   
+.gnb li:hover a.dp1 { background:gold; color:#fff; }    
+.gnb li:hover .sub { opacity:1; visibility:visible; height:96px; } 
+.gnb li.item1 { border-left:1px solid #333; }    
+.gnb li.item1 .sub { border-left:1px solid #333; left:-1px; border-right:1px solid #333; box-sizing:border-box; }
+.gnb li.item1 .sub li { box-sizing:border-box; width: 140px; }    
+.gnb li .sub li { border-top:0px; }    
+.gnb li .sub a:hover { background:gold; color:#fff; } 
+    .top_back {;z-index: 2; width: 1920px;height: 50px;background-color: black} 
+        
+    </style>
+</head>
+<body>
+       <div class="wrap">
+        <header>
+   <div class="logo_nav">
+       <a href="index.html"><img src="image/top2.png" alt=""></a>   
+       </div><hr>
+    <div class="top_back">
+      </div>
+       <hr style="color: gold">
+       
+       
+            <nav class="gnb">
+            <ul class="menu">
+                <li class="item1">
+                    <a href="sale.html" class="dp1">특별할인</a>
+                   
+                </li>
+                <li class="item2">
+                    <a href="menu2.html" class="dp1">상품리스트</a>
+                    <ul class="sub">
+                        <li><a href="menu2.html">EDITION SERIES</a></li>
+                        <li><a href="menu2-2.html">PERFORMANCE</a></li>
+                        <li><a href="menu2-3.html">IN EARPHONE</a></li>
+                        <li><a href="menu2-4.html">SIGNATURE</a></li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <a href="menu3.html" class="dp1">특허기술</a>
+                
+                </li>
+                <li class="item4">
+                    <a href="menu4.html" class="dp1">테스트</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <figure>
+        <ul>
+            <li><a href=""><img src="/image/menu2_image/2in_image/logo_new-2.png" alt=""></a></li>
+            <li><a href=""><img src="/image/menu2_image/2in_image/111.png" alt=""></a></li>
+            <li><a href=""><img src="/image/menu2_image/2in_image/veri2-1.png" alt=""></a></li>
+            <li><a href=""><img src="/image/menu2_image/2in_image/333.png" alt=""></a></li>
+            <li><a href=""><img src="/image/menu2_image/2in_image/444.png" alt=""></a></li>
+        </ul>
+    
+       
+    </figure>
+   <footer class="ft">
+     <h1>문의전화|서울지점:02-777-7777|대전지점:042-777-7777 |이메일문의:ultrasone@gmail.com  <a href="https://www.facebook.com/ULTRASONE/"><img src="./image/facebook_link.png" alt="" ></a></h1>
+    
+     <hr>
+
+<h2>      
+Copyright(C)Contents and compilations published on these websites by the providers are subject to German copyright laws.</h2>
+      
+      
+  </footer>
+
+        
+        
+    </div> 
+</body>
+</html>
