@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>과학기술정보통신부</title>
+	<link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="image/pavi180x180.png">
+    <script src="./script/jquery-1.11.1.js"></script>
+    <script src="./script/main.js"></script>    
+    <style>
+        *{margin: 0 auto;padding: 0;}
+
+        body,html{width:1920;height:100%;font-family:'note Sans KR',sans-serif;
+    }
+        a{text-decoration: none;color: black}
+        ul{list-style: none;}
+        button,a,input{border: 0;outline: 0;}
+       
+        .logo {float: left;display: block}
+        .gnb {position: relative;
+    width:1300px;
+    height:40px;
+    margin-left: 700px;
+            margin-top: 20px;
+    margin-bottom: 100px; 
+    margin-right:300px;
+}
+.gnb li { float:left; 
+    width: 200px; 
+    height: 40px;
+    position:relative;
+}
+.gnb li a { 
+    display:block;
+    width: 200px; 
+    height: 40px;
+    line-height:40px;
+    text-align:center; 
+    color:#333;
+    font-weight:600;
+}
+.gnb li .sub {
+    width: 200px;
+    height: 160px;
+    background:#fff;
+    border-top:3px solid #ccc;
+    position:absolute;
+    top: 40px;
+    left: 0;
+    z-index:999;
+    visibility: hidden;
+    opacity:0;
+    transition:0.5s;
+}
+
+/*
+.gnb li:hover .sub {
+    visibility:visible;
+    opacity: 1;
+}
+*/
+.gnb:hover li .sub {
+    visibility:visible;
+    opacity: 1;
+}
+.gnb li a.dp1 {
+    font-size:16px;     
+    border-top:3px solid #ccc;
+    border-bottom:3px solid #ccc;
+}
+.gnb li:hover a.dp1 {
+    background:#333;
+    color:#fff;
+}
+.gnb li .sub a {
+    font-size:14px;
+}
+.gnb li .sub a:hover {
+    background:#333;
+    color:#fff;
+}
+/*이미지 슬라이드*/
+.ban_frame { width:300%; min-width:3600px; }
+.ban_frame li { float:left; width: 1920px; height:800px; opacity:0; visibility:hidden; transition:0.8s; position:relative; }
+.ban_frame li.on { opacity:1; visibility:visible; }
+.tit_box { position:absolute; top: 30%; left:0; text-align:center; color:#fff; 
+width:100%; font-weight:bold; text-shadow:1px 1px 4px #333333; }
+.tit { font-size:2em; line-height:3; }
+.ban_frame img {width: 1920px;height: 600px;}
+
+
+.news{width: 1920px;height: 410px;}
+.ban_box {position: relative;;margin-left: 360px;bottom: 300px;}
+.ban_box img {border-radius: 25%;width: 300px;height: 250px;padding-left: 10px;float: left;}
+        .pop_box{position: fixed;left: 1820px}
+        pop1 {position:absolute;margin-top: 500px;margin-left: 1700px}
+        pop2 {position: absolute;}  
+        #ppppp {animation: ani1 linear 10s infinite;position:absolute;z-index: 10 
+        }
+        @keyframes ani1 {
+            0%{left: -100px;bottom: -100px}
+            30%  {bottom: 100px}
+            40%  {bottom: 150px}
+            50%  {bottom: 200px}
+            60%  {bottom: 250px}
+            65%  {bottom: 300px}
+            70%  {bottom: 400px}
+            75%  {bottom: 450px}
+            80%  {bottom: 500px}
+            90% {bottom: 550px} 
+            95%    {bottom: 600px}
+            
+            100% {left:110%;}
+        }
+    </style>
+    
+
+</head>
+<body>
+
+
+
+ <div class="wrap">
+   
+ <header>
+        <div class="news">
+               
+                <a href=""><img src="image/top1.jpg" alt=""></a>    
+                </div>
+ <a href="" class="logo"><img src="image/logo.PNG" alt=""></a>
+ <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#" class="dp1">메뉴1</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dp1">메뉴2</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dp1">메뉴3</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dp1">메뉴4</a>
+                        <ul class="sub">
+                            <li><a href="#">서브1</a></li>
+                            <li><a href="#">서브2</a></li>
+                            <li><a href="#">서브3</a></li>
+                            <li><a href="#">서브4</a></li>
+                        </ul>
+                    </li>
+               
+                        <li>
+                              <a href="#" class="dp1">로그인</a>
+                        </li>
+                        <li>
+                              <a href="#" class="dp1">회원가입</a>
+                        </li>
+                </ul>
+            </nav>
+        </header>
+            <figure>
+             <div class="slide">
+             <a href="" id="ppppp"><img src="image/rt2.png" alt=""></a>
+        <ul class="ban_frame">
+            <li class="on">
+                <img src="image/slide1.png" alt="대한민국을 아름답게 하는 힘">
+         
+            </li>
+            <li>
+               <a href=""><img src="image/slide2.jpg" alt="대한민국의 뼈대를 건설하는 힘"></a>
+        
+            </li>
+            <li>
+                <img src="image/slide1.png" alt="대한민국의 터전을 건설하는 힘">
+                <div class="tit_box">
+                    <h3 class="tit">과학기술정보통신부 입니다.</h3>
+                    <p class="com"> 첨단기술과 품질우선주의를 바탕으로 시대를 대표하고 있습니다.</p>
+                </div>
+            </li>
+        </ul>
+    </div> 
+             </figure> 
+             <main>
+                <ul class="ban_box">
+                   
+                    <li class="ban1"><a href=""><img src="image/ban1.png" alt=""></a></li>
+                    <li class="ban2"><a href="#"><img src="image/ban2.png" alt=""></a></li>
+                    <li class="ban3"><a href=""><img src="image/ban3.png" alt=""></a></li>
+                    <li class="ban4"><a href=""><img src="image/ban4.png" alt=""></a></li>
+                </ul>
+               </main>  
+            <div class="pop_box">
+              
+              <div class="pop2"><a href=""><img src="image/pop222.png" alt=""></a></div>
+              <div class="pop3"><a href=""><img src="image/pop333.png" alt=""></a></div>
+              <div class="pop4"><a href=""><img src="image/pop444.png" alt=""></a></div>
+              
+
+            </div> 
+
+
+
+
+
+	</div>          
+     
+<footer>
+   <hr><hr>
+       <div id="ftwrap">
+           <a href="">이용안내|</a>
+            <a href="">소식지신청|</a> 
+            <a href="">개인정보 처리방침|</a> 
+            <a href="">저작권정책|</a> 
+            <a href="">RSS이용안내|</a> 
+            <a href="">찾아오시는길|</a> <br>
+            
+    </div>
+    <div id="add">
+<address>(30121)세종특별자치시 가름로 194(어진동)대표전화:국번없이(유료)1335(정부민원110)
+    /야간:044-202-4180~1/FAX:02-2110-1671<br>
+    Copyright Ministry of Science and ICT.All Right Reserved.</address>
+     
+    </div>
+    
+     </footer>
+        
+    
+    
+    
+        
+    
+     
+
+    </body>
+</html>

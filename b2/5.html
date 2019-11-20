@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 문서 07</title>
+<style>  
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none;}
+    body,html{width: 100%;height: 100%;font-family: 'note Sans KR' sans-serif;}
+    bottom,a,input{border: 0;outline: 0;}
+    body {background-image: url(image/green.jp);background-repeat: no-repeat;}
+    form {}
+</style>
+</head>
+<body>
+   <a href="index.html"><img src="image/menu1/1.PNG"></a>
+    
+    <h3>회원가입</h3>
+    
+        <form method="get">
+        <label for="m_id">아이디</label> :
+    <input type="text" id="m_id" name="id"><br>
+    <label for="m_pw>">비밀번호</label> :
+    <input type="password" value="password"><br>
+    <input type="submit"><br>
+    <input type="checkbox"><br>
+    <input type="image" src="http://pla기cehold.it/100x100"><br>    
+    </form>
+    -->
+    
+    
+    <form action="" method="" name="frm1" id="frm01" autocomplete="on">
+        <fieldset>
+            <legend>기본 정보</legend>
+   
+                 
+                 
+         
+            <label for="m_id">아이디</label> : 
+            <input type="text" id="m_id" name="id" title="아이디 입력하되 영문 대소문자와 숫자를 포함하여 4글자 부터 10글자 까지 입력가능함" size="80" maxlength="10" tabindex="1" placeholder="아이디를 입력" autofocus required pattern="[a-zA-Z0-9]{4,10}"><br><br>
+            <label for="m_pw">비밀번호</label> : 
+            <input type="password" id="m_pw" name="pw" title="패스워드 입력" autocomplete="off" required pattern="[a-zA-Z0-9]{10}"><br><br>
+            <label for="m_pw2">비밀번호 확인</label> : 
+            <input type="password" id="m_pw2" name="pw2" title="패스워드 입력" autocomplete="off" required><br><br>
+            <input type="text" id="m_name" name="name" placeholder="이름 입력" value="이름넣기" readonly required ><br><br>
+            <input type="email" name="email" id="m_email" pattern="^[a-z0-9_+.-]+@([a-z0-9-]+\.)+[a-z0-9]{2,4}$" placeholder="이메일 입력" required><br><br>
+            <input type="tel" name="tel" id="m_tel" pattern="0\d{1,2}\-\d{3,4}\-\d{4}\" placeholder="전화번호 입력"><br><br>
+            <input type="text" name="email2" id="m_email2" placeholder="이메일 입력" pattern="^[a-zA-Z0-9]">@
+            <select name="email3" id="m_email3">
+                <option value="">선택안함</option>
+                <option value="naver.com">네이버</option>
+                <option value="google.com">구글</option>
+                <option value="daum.net">다음</option>
+            </select><br><br>
+            <input type="file" placeholder="사진 입력" name="file" accept="image/*"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>추가 정보</legend>
+            <div class="hobby">
+                <label>취미</label><br>
+                <input type="checkbox" id="ck1">
+                <label for="ck1">영화감상</label> &nbsp; &nbsp;
+                <input type="checkbox" id="ck2">
+                <label for="ck2">등산</label> &nbsp;  &nbsp;
+                <input type="checkbox" id="ck3">
+                <label for="ck3">낚시</label> &nbsp;  &nbsp;
+                <input type="checkbox" id="ck4">
+                <label for="ck4">독서</label>
+            </div><br><br>
+        
+            
+
+            
+            
+            <div class="male">
+                <label>성별</label><br>
+                <input type="radio" name="rdo" id="ra1" checked>
+                <label for="ra1">여성</label> &nbsp;  &nbsp;
+                <input type="radio" name="rdo" id="ra2">
+                <label for="ra2">남성</label>
+            </div><br><br>
+            <label for="m_memo">회원 약관</label><br>
+            <textarea name="memo" id="m_memo" cols="70" rows="10" disabled>
+                제 1 조 (목적)
+1. 본 약관은 기업마당 사이트가 제공하는 모든 서비스(이하 "서비스")의 이용조건 및 절차, 이용자와 기업마당 사이트의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
+제 2 조 (약관의 효력과 변경)
+1. 기업마당 사이트는 귀하가 본 약관 내용에 동의하는 경우 기업마당 사이트의 서비스 제공 행위 및 귀하의 서비스 사용 행위에 본 약관이 우선적으로 적용됩니다.
+2. 기업마당 사이트는 본 약관을 사전 고지 없이 변경할 수 있고 변경된 약관은 기업마당 사이트 내에 공지하거나 e-mail을 통해 회원에게 공지하며, 공지와 동시에 그 효력이 발생됩니다.
+이용자가 변경된 약관에 동의하지 않는 경우, 이용자는 본인의 회원등록을 취소 (회원탈락)할 수 있으며 계속 사용의 경우는 약관 변경에 대한 동의로 간주 됩니다.
+제 3 조 (약관 외 준칙)
+1. 본 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법, 정보통신윤리위원회심의규정, 정보통신 윤리강령, 프로그램보호법 및 기타 관련 법령의 규정에 의합니다.
+제 4 조 (용어의 정의)
+본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+
+1. 이용자 : 본 약관에 따라 기업마당 사이트가 제공하는 서비스를 받는 자.
+2. 가입 : 기업마당 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위.
+3. 회원 : 기업마당 사이트에 개인 정보를 제공하여 회원 등록을 한 자로서 기업마당 사이트가 제공하는 서비스를 이용할 수 있는 자.
+4. 비밀번호 : 이용자와 회원ID가 일치하는지를 확인하고 통신상의 자신의 비밀보호를 위하여 이용자 자신이 선정한 문자와 숫자의 조합.
+5. 탈퇴 : 회원이 이용계약을 종료시키는 행위.
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="회원가입"><br><br>
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>
+<!--
+    자주 사용하는 패턴
+    
+    전자우편 주소: ^[a-z0-9_+.-]+@([a-z0-9-]+\.)+[a-z0-9]{2,4}$
+    
+    URL: ^(file|gopher|news|nntp|telnet|https?|ftps?|sftp):\/\/([a-z0-9-]+\.)+[a-z0-9]{2,4}.*$
+    
+    HTML 태그 - HTML tags: \<(/?[^\>]+)\>
+    
+    전화 번호 - 예, 123-123-2344 혹은 123-1234-1234: (\d{3}).*(\d{3}).*(\d{4})
+     
+    날짜 - 예, 3/28/2007 혹은 3/28/07: ^\d{1,2}\/\d{1,2}\/\d{2,4}$ 
+    
+    jpg, gif 또는 png 확장자를 가진 그림 파일명: ([^\s]+(?=\.(jpg|gif|png))\.\2)
+    
+    1부터 50 사이의 번호 - 1과 50 포함: ^[1-9]{1}$|^[1-4]{1}[0-9]{1}$|^50$ 
+    
+    16 진수로 된 색깔 번호: #?([A-Fa-f0-9]){3}(([A-Fa-f0-9]){3})?
+    
+    적어도 소문자 하나, 대문자 하나, 숫자 하나가 포함되어 있는 문자열(8글자 이상 15글자 이하) - 올바른 암호 형식을 확인할 때 사용될 수 있음: (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}
+-->
+
+    
+    
+</form>
+
+</body>
+</html>
