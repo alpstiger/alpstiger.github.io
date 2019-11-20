@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="common.css">
+<link rel="shortcut icon" href="image/index/">
+<link rel="apple-touch-icon-precomposed" href=""> 
+ <script src="./js/jquery.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script> 
+<title>맘스터치</title>
+<style>
+      
+        *{margin: 0;padding: 0;}
+        ul{list-style: none}
+        a{text-decoration: none}:;text-decoration: none
+        body,html{width: 100%;height: 100%;}
+        button,input,a{border: 0;outline: 0;}
+    .wrap{width: 1920px}
+        
+       
+    
+        body{background-image:url(image/index/b.jpg);background-repeat: no-repeat}
+        
+    #logo{display: block;float: left}
+    
+.gnb {float: left;padding-left:  50px;padding-top: 80px;
+    width:1200px;
+    height:40px;
+   
+    margin-top:30px; 
+    margin-right:30px;
+}
+.gnb li { float:left; 
+    width: 260px; 
+    height: 40px;
+    position:relative;
+}
+.gnb li a { 
+    display:block;
+    width: 260px; 
+    height: 40px;
+    line-height:40px;
+    text-align:center; 
+    color:#333;
+    font-weight:600;
+}
+.gnb li .sub {
+    width: 260px;
+    height: 160px;
+    background:#fff;
+    border-top:3px solid #ccc;
+    position:absolute;
+    top: 40px;
+    left: 0;
+    z-index:999;
+    visibility: hidden;
+    opacity:0;
+    transition:0.5s;
+}
+/*
+.gnb li:hover .sub {
+    visibility:visible;
+    opacity: 1;
+}
+*/
+.gnb:hover li .sub {
+    visibility:visible;
+    opacity: 1;
+}
+.gnb li a.dp1 {
+    font-size:16px;     
+    border-top:3px solid #ccc;
+    border-bottom:3px solid #ccc;
+}
+.gnb li:hover a.dp1 {
+    background:#333;
+    color:#fff;
+}
+.gnb li .sub a {
+    font-size:14px;
+}
+.gnb li .sub a:hover {
+    background:#333;
+    color:#fff;
+}
+    .ko_en{clear: both;margin-left: 1300px;float: left;position: absolute;margin-top: 117px}
+    .ko_en li{float: left;margin-left:  20px;}
+    
+    .img_slide {
+    clear:both;
+    width:100%;
+    height:400%;
+}
+.img_slide li {
+    clear:both;
+    width:100%;
+    height:25%;
+}
+.img_slide li a {
+    display:block;
+}
+.img_slide li a img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+.btn_box {
+    width: 40px;
+    height: 80px;
+    position:absolute;
+    left: 40px;
+    top:110px;
+    z-index:30;
+}
+.btn_box li {
+    clear:both;
+    width: 40px;
+    height: 40px;
+}
+.btn_box li button {
+    display:block;
+    width: 40px;
+    height: 40px;
+    text-indent:-9999px;
+    background-color:rgba(0,0,0,0.7);
+    cursor:pointer;
+}
+.btn_box li.it1 button {
+    background-image:url("/image/index/top_btn.png");
+}
+.btn_box li.it2 button {
+    background-image:url("/image/index/down_btn.png");
+}
+
+     
+    
+</style>
+</head>
+<body>
+   <div class="wrap">
+   <a href="" id="logo"><img src="/image/index/logo.png" alt=""></a>
+    <nav class="gnb">
+               
+                <ul>
+                    <li>
+                        <a href="#" class="dp1">메뉴</a>
+                        <ul class="sub">
+                            <li><a href="#">햄버거</a></li>
+                            <li><a href="#">치킨</a></li>
+                            <li><a href="#">디저트</a></li>
+                            <li><a href="#">음료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dp1">매장찾기</a>
+                      
+                    </li>
+                    <li>
+                        <a href="#" class="dp1">고객리뷰</a>
+                       
+                    </li>
+                    <li>
+                        <a href="#" class="dp1">공지사항</a>
+                       
+                    </li>
+                   
+                </ul>
+              
+            </nav>
+   <ul class="ko_en">
+                        <li><a href=""><img src="/image/index/ko.jpg" alt=""></a></li>
+                        <li><a href=""><img src="/image/index/en.jpg" alt=""></a></li>
+                    </ul>
+    
+  
+ <figure class="vs">
+            <ul class="img_slide">
+                <li class="item1">
+                    <a href="#">
+                        <img src="image/index/slide1.PNG" alt="더~! 더~! 청순해지는 여성을 위한 아이템" title="더~! 더~! 청순해지는 여성을 위한 아이템">
+                    </a>
+                </li>
+                <li class="item2">
+                    <a href="#">
+                        <img src="/image/index/slide2.PNG" alt="폼 나는 JUST 만의 아우터 아이템" title="폼 나는 JUST 만의 아우터 아이템">
+                    </a>
+                </li>
+                <li class="item3">
+                    <a href="#">
+                        <img src="/image/index/slide3.PNG" alt="감각이 돋보이도록~! 쭈~욱 다리는 길게~!">
+                    </a>
+                </li>
+            </ul>
+            <ul class="btn_box">
+                <li class="it1"><button>위로</button></li>
+                <li class="it2"><button>아래</button></li>
+            </ul>
+        </figure>
+
+
+
+</div>
+</body>
+<!--
+<footer>
+
+<div class="ftwrap">
+            <a href="">이용안내|</a> 
+            <a href="">개인정보 처리방침|</a> 
+            <a href="">저작권정책|</a> 
+            <a href="">찾아오시는길|</a> <br>
+            
+
+<address>(30121)세종특별자치시 가름로 194(어진동)대표전화:국번없이(유료)1335(정부민원110)
+    /야간:044-202-4180~1/FAX:02-2110-1671<br>
+    Copyright Ministry of Science and ICT.All Right Reserved.</address>
+    </div>    
+</footer>-->
+</html>
